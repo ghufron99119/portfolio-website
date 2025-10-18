@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional portfolio of John Doe, a full-stack web developer specializing in HTML, CSS, JavaScript, React, and Node.js."
+    />
+    <meta
+      name="keywords"
+      content="web developer, portfolio, HTML, CSS, JavaScript, React, Node.js"
+    />
+    <meta name="author" content="John Doe" />
+    <title>John Doe - Full-Stack Web Developer Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👤</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">John Doe</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img
+          src="https://picsum.photos/300/300?random=1"
+          alt="John Doe Profile Photo"
+          class="profile-photo"
+        />
+        <h2>John Doe</h2>
+        <p class="tagline">Crafting Code with Purpose</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="skills">
+            <h3>Key Skills</h3>
+            <ul>
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js-square"></i> JavaScript</li>
+              <li><i class="fab fa-react"></i> React</li>
+              <li><i class="fab fa-node-js"></i> Node.js</li>
+            </ul>
+          </div>
+          <div class="experience">
+            <h3>Work Experience</h3>
+            <div class="job">
+              <h4>Senior Web Developer at TechCorp</h4>
+              <p class="date">2020 - Present</p>
+              <p>
+                Developed and maintained web applications using React and
+                Node.js, improving performance by 30%.
+              </p>
+            </div>
+            <div class="job">
+              <h4>Junior Developer at StartupXYZ</h4>
+              <p class="date">2018 - 2020</p>
+              <p>
+                Built responsive websites and collaborated on full-stack
+                projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <img src="https://picsum.photos/400/250?random=2" alt="Project 1" />
+            <div class="overlay">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-stack e-commerce site built with React and Node.js.</p>
+              <a
+                href="https://github.com/johndoe/ecommerce"
+                target="_blank"
+                class="btn"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img src="https://picsum.photos/400/250?random=3" alt="Project 2" />
+            <div class="overlay">
+              <h3>Task Management App</h3>
+              <p>A React-based app for managing tasks with drag-and-drop.</p>
+              <a
+                href="https://demo-taskapp.netlify.app"
+                target="_blank"
+                class="btn"
+                >Demo</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img src="https://picsum.photos/400/250?random=4" alt="Project 3" />
+            <div class="overlay">
+              <h3>Portfolio Website</h3>
+              <p>
+                A responsive portfolio site using pure HTML, CSS, and
+                JavaScript.
+              </p>
+              <a
+                href="https://github.com/johndoe/portfolio"
+                target="_blank"
+                class="btn"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img src="https://picsum.photos/400/250?random=5" alt="Project 4" />
+            <div class="overlay">
+              <h3>Weather Dashboard</h3>
+              <p>A Node.js API integrated with a front-end dashboard.</p>
+              <a
+                href="https://demo-weather.netlify.app"
+                target="_blank"
+                class="btn"
+                >Demo</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img src="https://picsum.photos/400/250?random=6" alt="Project 5" />
+            <div class="overlay">
+              <h3>Blog Platform</h3>
+              <p>A full-stack blog application with user authentication.</p>
+              <a
+                href="https://github.com/johndoe/blog"
+                target="_blank"
+                class="btn"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error" id="message-error"></span>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+          <a href="https://linkedin.com/in/johndoe" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/johndoe" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://instagram.com/johndoe" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 John Doe</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
